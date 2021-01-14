@@ -6,7 +6,7 @@ const failures = new Rate('failed requests');
 
 export const options = {
   vus: 10,
-  duration: '10s',
+  duration: '1m',
   thresholds: {
     failed_requests: ['rate<=0'],
     http_req_duration: ['p(95)<500']
